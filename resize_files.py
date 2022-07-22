@@ -1,6 +1,6 @@
 from PIL import Image
 import os
-ff = open("./DataModified/modified_labels.csv", "w")
+ff = open("./DataModified/modified_labels.csv", "w+")
 ff.write("Frame,Label\n")
 for x in os.listdir("./image/"):
     f = [x + "_" + z for z in open("./label/" + x + ".csv", "r").read().strip().split("\n")[1:]]
