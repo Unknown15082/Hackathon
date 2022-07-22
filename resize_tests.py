@@ -5,4 +5,3 @@ for x in os.listdir("./test/"):
         img = Image.open("./test/" + x + "/" + y)
         img = img.resize((64, 64))
         img.save("./DataModified/Test/%s.png" % (x + "_" + y[:-4]))
-ff.close()
